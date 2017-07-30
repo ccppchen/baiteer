@@ -1,0 +1,39 @@
+.content {
+  .breadcrumb{
+    background-color: transparent;
+    font-size: 14px;
+    padding-left: 0;
+    a{
+      color: #666666;
+    }
+  }
+  .breadcrumb > li {
+    &.active{
+      color: $link-hover-color;
+      &:after{
+        content: none;
+      }
+    }
+  }
+  .breadcrumb > li + li:before{
+    content: none;
+  }
+  .breadcrumb > li + li:after{
+    content: ">";
+    font-size: 14px;
+    color: #666666;
+    padding: 0 5px;
+  }
+}
+
+.progress-box{
+  .progress-title{
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 32px;
+    @media (max-width: $screen-xs-max){
+      margin-bottom: 20px;
+    }
+  }
+}

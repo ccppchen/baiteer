@@ -1,0 +1,85 @@
+@import "settings";
+
+.market-list{
+  .market-item{
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 55px;
+    overflow: hidden;
+    p{
+      margin-bottom: 0;
+      line-height: 26px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .market-right-text{
+      margin-bottom: 25px;
+    }
+    & > .col-xs-12{
+      padding: 0;
+      @media (min-width: $screen-md-min){
+        height: 237px;
+      }
+    }
+    .market-pic img{
+      width: 100%;
+    }
+    .market-right-box{
+      display: table;
+      width: 100%;
+      vertical-align: middle;
+      padding: 12px;
+      height: 100%;
+      .block-phone{
+        display: block;
+      }
+      @media (min-width: $screen-md-min){
+        padding: 0 30px;
+        .block-phone{
+          display: inline;
+        }
+      }
+      .market-box-main{
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 16px;
+        color: #333333;
+      }
+    }
+    .market-right-title{
+      margin-bottom: 10px;
+      span{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 20px;
+        color: $link-hover-color;
+      }
+      .right-title-icons{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        padding: 10px;
+        background-color: $link-hover-color;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        &.icon-protalk{
+          background-image: url('../images/marketCoopera/icon-protalk.png');
+        }
+        &.icon-project{
+          background-image: url('../images/marketCoopera/icon-project.png');
+        }
+        &.icon-hezuo{
+          background-image: url('../images/marketCoopera/icon-hezuo.png');
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.vmc-container {
+  position: relative
+}
+
+.vmc-viewport {
+  overflow: hidden
+}
+
+.vmcarousel {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 1000%;
+}
+
+.vmcarousel:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.vmcarousel > li {
+  float: left;
+  > a {
+    position: relative;
+    display: block;
+  }
+}
+
+.vmcarousel>li img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.vmc-arrow-left,
+.vmc-arrow-right {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  width: 30px;
+  height: 54px;
+  margin-top: -27px;
+  text-align: center;
+  background-color: #999999;
+  color: #fff;
+  cursor: pointer;
+  &:hover{
+    background-color: #f08200
+  }
+}
+
+.vmc-arrow-right {
+  left: auto;
+  right: -15px;
+}

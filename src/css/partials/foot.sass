@@ -1,0 +1,158 @@
+.btr-foot-row
+  margin: 0
+.footer
+  border-top: 3px solid $link-hover-color
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  position: relative
+  overflow: hidden
+  &:after
+    content: ''
+    padding-top: 18.4%
+    display: block
+  .container
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    margin: auto
+  .btr-foot-row .col-sm-3
+    color: #fff
+    font-size: 12px
+    display: none
+    padding: 30px 25px
+    .foot-title
+      font-size: 18px
+      margin-bottom: 5px
+    &:first-child
+      padding-left: 0
+
+.foot-about
+  .foot-about-content
+    font-size: 12px
+    line-height: 24px
+
+.web-map
+  .foot-map-content
+    overflow: hidden
+    .map-ul-left
+      float: left
+    .map-ul-right
+      float: right
+    ul
+      li
+        line-height: 24px
+        a
+          color: #fff
+          &:hover
+            text-decoration: none
+            color: $link-hover-color
+
+.foot-share
+  .share-icons
+    margin-right: -15px
+    overflow: hidden
+    .share-icon
+      width: 25%
+      padding-right: 15px
+      float: left
+      vertical-align: middle
+      font-size: 30px
+      cursor: pointer
+      &:hover
+        color: $link-hover-color
+
+.ercode-icons
+  margin-right: -15px
+  overflow: hidden
+  .ercode-item
+    width: 50%
+    padding-right: 15px
+    float: left
+    vertical-align: middle
+    img
+      width: 100%
+      height: 100%
+
+.foot-bottom
+  text-align: center
+  font-size: 12px
+  color: #ffffff
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  padding: 16px 0
+  background: rgba(#000000, .5)
+  .gongan
+    vertical-align: middle
+    img
+      margin-right: 5px
+      margin-left: 20px
+
+// 移动设备
+@media (max-width: $screen-xs-max)
+  .foot-bottom
+    padding: 4px 0
+  .foot-bottom .gongan
+    padding: 5px 10px
+  .foot-bottom .gongan img
+    margin-left: 5px
+  .footer:after
+    padding-top: 45%
+  .footer .btr-foot-row .col-sm-3
+    padding: 4px 24px
+    height: auto
+    overflow: hidden
+    .foot-title
+      margin-bottom: 0
+  .foot-share
+    width: auto
+    float: left
+
+// 平板设备
+@media (min-width: $screen-sm-min)
+  .foot-bottom
+    padding: 8px 0
+  .foot-bottom .gongan img
+    margin-left: 8px
+  .footer:after
+    padding-top: 24%
+  .footer .btr-foot-row .col-sm-3
+    padding: 12px 66*0.5px 50*0.5px 66*0.5px
+    display: block
+    .foot-title
+      margin-bottom: 10px
+    .foot-about .foot-about-content
+      line-height: 20px
+    &:last-child
+      &:after
+        content: none
+    &:first-child
+      padding-right: 16px
+    &:after
+      content: ''
+      position: absolute
+      right: 0
+      width: 1px
+      height: 100px
+      top: 50%
+      margin-top: -50px
+      background: url('../images/foot/foot_bdr.png') no-repeat
+      background-size: contain
+
+// 大屏设备
+@media (min-width: $screen-md-min)
+  .footer:after
+    padding-top: 18%
+  .foot-bottom
+    padding: 18px 0
+  .footer .btr-foot-row .col-sm-3
+    padding: 42px 52.8px 40px 52.8px
+    &:first-child
+      padding-left: 20px
+
+@media (min-width: $screen-md-min) and (max-width: $screen-lg-min)
+  .footer:after
+    padding-top: 25%

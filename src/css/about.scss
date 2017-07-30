@@ -1,0 +1,171 @@
+@import "settings";
+.content {
+  .breadcrumb{
+    background-color: transparent;
+    font-size: 14px;
+    padding-left: 0;
+    a{
+      color: #666666;
+    }
+  }
+  .breadcrumb > li {
+    &.active{
+      color: $link-hover-color;
+      &:after{
+        content: none;
+      }
+    }
+  }
+  .breadcrumb > li + li:before{
+    content: none;
+  }
+  .breadcrumb > li + li:after{
+    content: ">";
+    font-size: 14px;
+    color: #666666;
+    padding: 0 5px;
+  }
+}
+
+.progress-box{
+  .progress-title{
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 32px;
+  }
+}
+.progress-main{
+  margin-bottom: 90px;
+  .flag-end, .flag-start{
+    text-align: center
+  }
+  .flag-start{
+    .flag-icon{
+      margin-top: -8px;
+    }
+  }
+}
+.progress-list{
+  .progress-item{
+    float: right;
+    width: 50%;
+    vertical-align: top;
+    padding-left: 42px;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      right: auto;
+      left: -8px;
+      top: 0;
+      width: 17px;
+      height: 100%;
+      background: url('../images/icons/space-line.png') no-repeat;
+    }
+    .progress-inner{
+      background-color: #f1f1f1;
+      overflow: hidden;
+      color: #333333;
+      line-height: 18px;
+      font-size: 14px;
+      border-radius: 10px;
+      height: 105px;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -moz-box-direction: reverse;
+      box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+      -moz-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      .inner-content{
+        padding: 0 18px;
+      }
+      .inner-time{
+        width: 90px;
+        text-align: center;
+        border-right: 1px solid #cccccc;
+        border-left: 0;
+        line-height: 20px;
+      }
+    }
+    margin-bottom: 96px;
+    margin-top: 0;
+    &:nth-child(2n){
+      float: left;
+      padding-right: 42px;
+      margin-top: 96px;
+      margin-bottom: 0;
+      &:after{
+        right: -9px;
+        left: auto;
+      }
+      .progress-inner{
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        flex-direction: row;
+        .inner-time{
+          border-left: 1px solid #cccccc;
+          border-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// 公司介绍
+.about-comoany-box{
+  padding-bottom: 10px;
+  .con-titile{
+    color: $link-hover-color;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .con-grap{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 25px;
+  }
+}
+.class-box{
+  min-height: 170px;
+  margin: 0 -124px 0;
+  padding: 0;
+  .col-sm-3{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 32px 10px;
+    &:after{
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 1px;
+      height: 170px;
+      top: 50%;
+      margin-top: -85px;
+      background: url(../images/about/class_bdr.png) no-repeat;
+      background-size: contain;
+    }
+    &:last-child:after{
+      content: none;
+    }
+    .class-text{
+      font-size: 18px;
+      color: #333;
+      margin-top: 14px;
+    }
+  }
+}
+.content-bg{
+  background: url('../images/about/mifeng.png') no-repeat;
+  background-position: 92% top;
+}
+

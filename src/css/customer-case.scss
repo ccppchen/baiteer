@@ -1,0 +1,46 @@
+@import "settings";
+
+.customer-list{
+  padding-bottom: 20px;
+  .customer-item{
+    height: 150px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+    .pic-inner{
+      @media (min-width: $screen-md-min){
+        background: url('../images/icons/case_bdr.png') no-repeat;
+        background-position: right center;
+      }
+    }
+    .customer-item-pic{
+      width: 15%;
+      text-align: center;
+      padding: 24px 10px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .item-con-title{
+      font-size: 18px;
+      color: $link-hover-color;
+      margin-bottom: 12px;
+    }
+    .customer-item-con{
+      width: 85%;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 10px;
+      overflow: hidden;
+      @media (min-width: $screen-md-min){
+        padding: 12px 30px;
+      }
+    }
+    .item-con-text{
+      line-height: 24px;
+      font-size: 14px;
+      color: #4d4d4d;
+    }
+  }
+}

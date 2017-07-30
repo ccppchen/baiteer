@@ -1,57 +1,27 @@
 'use strict';
 
-var FUSE = FUSE || {};
+$('.btr-nav > li').on('click', function() {
+  $(this).addClass('active').siblings().removeClass('active')
+})
 
-(function($) {
+var footHeight = $('.btr-foot-row .math-heigth').height()
+$('.footer .col-sm-3').height(footHeight)
 
-	var console = window.console || {
-    log: function () { }
-  };
+/* 返回顶部 js start */
+$.fn.gotop = function() {
+  var $backTop = this.$backTop = $('<div class="gotop"><div class="iconfont icon-icon-arrow-left"></div>TOP</div>');
+  $('body').append($backTop);
 
-  FUSE.Events = {};
+  $backTop.on('click', function() {
+    $('body,html').animate({ scrollTop: 0 }, 200);
+  });
 
-  FUSE.EventManager = (function() {
-    return {
-      subscribe: function (event, fn) {
-        $(this).unbind(event, fn).bind(event, fn);
-      },
-      resign: function (event, fn) {
-        $(this).unbind(event, fn);
-      },
-      publish: function (event) {
-        $(this).trigger(event);
-      }
-    };
-  } ());
-
-  FUSE.PageManager = (function() {
-    var Page;
-
-    Page = (function(ref) {
-      var self = {};
-
-      self.init = function() {
-
-      };
-
-      return self;
-    }) ();
-
-    var initialised = false;
-
-    return {
-      init: function() {
-        if (initialised) {
-          return;
-        }
-        initialised = true;
-        Page.init();
-      },
-      Page: Page
-    }
-
-  }) ();
-
-}) (jQuery);
-
-$(document).on('ready', FUSE.PageManager.init);
+  var timmer = null;
+  $(window).on("scroll touchmove", function() {
+    var d = $(window).scrollTop(),
+      e = $(window).height();
+      e < d ? $backTop.css("display", "block") : $backTop.css("display", "none");
+  });
+};
+$.fn.gotop();
+/* 返回顶部js end */

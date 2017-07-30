@@ -1,0 +1,76 @@
+@import "settings";
+.news-detail .news-time{
+  font-size: 12px;
+  color: #666;
+  background: url('../images/news/news-time.png') no-repeat;
+  padding-left: 22px;
+  background-position: left center;
+  display: inline-block;
+}
+.news-detail{
+  text-align: center;
+}
+.news-detail-main{
+  font-size: 14px;
+  margin-bottom: 35px;
+  color: #333;
+  .pre{
+    p{
+      margin-bottom: 5px;
+    }
+  }
+  p{
+    margin-bottom: 20px;
+    &.news-img{
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+}
+
+.pages-edit{
+  .col-xs-12{
+    font-size: 16px;
+    color: #000000;
+  }
+  .item-rows{
+    line-height: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+    &.active{
+      color: $link-hover-color;
+      .edit-btn{
+        background-color: $link-hover-color;
+        color: #fff;
+      }
+      .edit-title:hover, .edit-title{
+        color: $link-hover-color;
+      }
+    }
+  }
+  .edit-btn{
+    width: 100px;
+    text-align: center;
+    color: $link-hover-color;
+    border: 1px solid $link-hover-color;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+  }
+  .edit-title:hover, .edit-title{
+    color: #000000;
+  }
+  .item-right-rows{
+    text-align: right;
+    line-height: 36px;
+    height: 36px;
+    font-size: 14px;
+    color: #666666;
+    .iconfont{
+      font-size: 36px;
+      float: right;
+      margin-right: 10px;
+      color: #999999;
+    }
+  }
+}
