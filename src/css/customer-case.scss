@@ -3,12 +3,14 @@
 .customer-list{
   padding-bottom: 20px;
   .customer-item{
-    height: 150px;
     background-color: #f1f1f1;
     overflow: hidden;
-    display: table;
-    width: 100%;
     margin-bottom: 30px;
+    @media (min-width: $screen-md-min){
+      display: table;
+      width: 100%;
+      height: 150px;
+    }
     .pic-inner{
       @media (min-width: $screen-md-min){
         background: url('../images/icons/case_bdr.png') no-repeat;
@@ -16,16 +18,23 @@
       }
     }
     .customer-item-pic{
-      width: 15%;
       text-align: center;
-      padding: 24px 10px;
-      display: table-cell;
-      vertical-align: middle;
+      padding: 18px 10px;
+      @media (min-width: $screen-md-min){
+        width: 15%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 24px 10px;
+      }
     }
     .item-con-title{
       font-size: 18px;
       color: $link-hover-color;
       margin-bottom: 12px;
+      text-align: center;
+      @media (min-width: $screen-md-min){
+        text-align: left;
+      }
     }
     .customer-item-con{
       width: 85%;

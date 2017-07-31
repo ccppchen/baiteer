@@ -1,0 +1,175 @@
+@import "settings";
+.detail-head{
+  .col-xs-12{
+    padding: 0;
+    margin: 0;
+    @media (min-width: $screen-sm-min){
+      &.left-inner{
+        max-width: 432px;
+      }
+    }
+  }
+  .detail-img-box{
+    border: 1px solid #ececec;
+    img{
+      max-width: 100%;
+    }
+  }
+  .vmc-arrow-right{
+    right: -40px;
+  }
+  .vmc-arrow-left{
+    left: -40px;
+  }
+  .vmcarousel-detail{
+    li{
+      a img{
+        border: 1px solid #ececec;
+        width: 110px;
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min){
+          width: 65px;
+        }
+        @media (min-width: $screen-md-min) and (max-width: $screen-lg-min){
+          width: 100px;
+        }
+      }
+      &.active{
+        a img{
+          border: 1px solid $link-hover-color;
+        }
+      }
+    }
+  }
+}
+.right-box{
+  @media (min-width: $screen-sm-min){
+    padding-left: 40px;
+  }
+  .hot-line-box{
+    padding-top: 22px;
+    border-top: 1px solid #e9e9e9;
+    font-size: 16px;
+    line-height: 30px;
+    .hot-title{
+      color: $link-hover-color;
+      font-size: 16px;
+    }
+    ul{
+      .icon-content{
+        background-image: url('../images/icons/icon-contnc.png');
+      }
+      .icon-telphone{
+        background-image: url('../images/icons/icon-telphone.png');
+      }
+      .icon-phone{
+        background-image: url('../images/icons/icon-phone.png');
+      }
+      .icon-qq{
+        background-image: url('../images/icons/icon-qq.png');
+      }
+    }
+    ul li{
+      color: #333333;
+      &.icon-item{
+        padding-left: 28px;
+        background-size: initial;
+        background-repeat: no-repeat;
+        background-position: left center;
+      }
+    }
+  }
+}
+.detail-small-img-box{
+  padding: 0 40px;
+  margin-top: 20px;
+}
+.detail-body{
+  margin-top: 48px;
+  .detail-body-head{
+    margin-bottom: 24px;
+    @media (max-width: $screen-sm-min) {
+      li{
+        margin-left: 0 !important;
+      }
+      .vmc-container{
+        padding: 0 24px;
+      }
+      .vmc-arrow-left, .vmc-arrow-right{
+        background-color: transparent !important;
+        color: #333;
+        .iconfont{
+          font-size: 24px;
+        }
+      }
+    }
+    ul li{
+      margin-left: -1px;
+      float: left;
+      text-align: center;
+      width: 50%;
+      @media (min-width: $screen-sm-min){
+        width: auto;
+      }
+      &.active{
+        a{
+          background-color: $link-hover-color;
+          color: #fff;
+        }
+      }
+    }
+    ul li a{
+      display: block;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      border: 1px solid $link-hover-color;
+      color: $link-hover-color;
+      font-size: 18px;
+      border-radius: 5px;
+      // &:hover{
+      //   background-color: $link-hover-color;
+      //   color: #fff;
+      // }
+      @media (min-width: $screen-sm-min){
+        width: 142px;
+      }
+    }
+  }
+  .detail-body-main{
+    margin-bottom: 35px;
+    .detail-main-title{
+      margin-bottom: 16px;
+      line-height: 1;
+      font-size: 24px;
+      color: $link-hover-color;
+      padding-left: 14px;
+      border-left: 4px solid $link-hover-color;
+    }
+  }
+}
+
+.detail-down-inner{
+  .inner-icon{
+    padding-left: 32px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @media (min-width: $screen-sm-min){
+      margin-bottom: 0;
+    }
+    &.icon-pdf{
+      background-image: url('../images/icons/PDF.png');
+    }
+    &:hover{
+      color: $link-hover-color;
+      text-decoration: underline;
+    }
+  }
+}
+

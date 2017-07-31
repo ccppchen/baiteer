@@ -20,10 +20,63 @@
         </div>
 
         <div class="news-pages">
+          <div class="question-box">
+            <div class="question-item">
+              <div class="item-head">
+                <div class="head-q">Q</div>
+                <div class="head-content">本安型防爆锂电池使用注意事项</div>
+              </div>
+              <div class="item-body">
+                <div class="body-q">A</div>
+                <div class="body-content">
+                  <p class="content-title">感谢您选用拜特尔公司出品的便携式防爆仪器设备，与之配套的专用本安型防爆锂电池使用注意事项如下，供参考！</p>
+                  <ul class="question-ul">
+                    <li>1、新的专用锂电池，在前三次使用时，充电：需要连续充电10-12小时；放电：需要让电池电量充分使用完毕。目的是：充分激活锂电池，延长安全锂电池使用时间和使用寿命。</li>
+                    <li>2、锂电池的电量使用近一半时，部分设备内部的电压保护装置启动，系统会提示电池电量低或使用完毕。此时电池还有近50%—60%左右的电量，重新开机后继续使用，直至使用完毕。（部分设备自带的闪光灯耗电较大，在光照条件许可的情况下，建议选择关闭闪光灯，延长电池使用时间。）</li>
+                    <li>3、严禁在危险场所充电，必须在安全环境中进行电池更换和数据导出！</li>
+                    <li>4、严禁分解电池或造成电池短路！</li>
+                    <li>5、严禁将电池投入火中或以任何方式加热！</li>
+                    <li>6、必须使用指定充电器充电！否则有爆炸危险！</li>
+                    <li>7、必须使用专业配套的电池特别是本安型锂电池，否则极有可能爆炸！</li>
+                    <li>8、如果长期不使用防爆锂电池时，为保护电池，必须每隔6个月对电池足量充电激活一次。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="question-item">
+              <div class="item-head">
+                <div class="head-q">Q</div>
+                <div class="head-content">防爆数码相机在何处使用？</div>
+              </div>
+              <div class="item-body">
+                <div class="body-q">A</div>
+                <div class="body-content">
+                  <p class="content-title">感谢您选用拜特尔公司出品的便携式防爆仪器设备，与之配套的专用本安型防爆锂电池使用注意事项如下，供参考！</p>
+                  <ul class="question-ul">
+                    <li>1、新的专用锂电池，在前三次使用时，充电：需要连续充电10-12小时；放电：需要让电池电量充分使用完毕。目的是：充分激活锂电池，延长安全锂电池使用时间和使用寿命。</li>
+                    <li>2、锂电池的电量使用近一半时，部分设备内部的电压保护装置启动，系统会提示电池电量低或使用完毕。此时电池还有近50%—60%左右的电量，重新开机后继续使用，直至使用完毕。（部分设备自带的闪光灯耗电较大，在光照条件许可的情况下，建议选择关闭闪光灯，延长电池使用时间。）</li>
+                    <li>3、严禁在危险场所充电，必须在安全环境中进行电池更换和数据导出！</li>
+                    <li>4、严禁分解电池或造成电池短路！</li>
+                    <li>5、严禁将电池投入火中或以任何方式加热！</li>
+                    <li>6、必须使用指定充电器充电！否则有爆炸危险！</li>
+                    <li>7、必须使用专业配套的电池特别是本安型锂电池，否则极有可能爆炸！</li>
+                    <li>8、如果长期不使用防爆锂电池时，为保护电池，必须每隔6个月对电池足量充电激活一次。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <% include partials/foot %>
     <% include partials/scripts %>
+    <script type="text/javascript">
+      $(function() {
+        $('.question-item .item-head').on('click', function() {
+          $(this).parent().toggleClass('active');
+        })
+      })
+    </script>
   </body>
 </html>

@@ -27,18 +27,13 @@
   }
 }
 
-.progress-box{
-  .progress-title{
-    text-align: center;
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 32px;
-  }
-}
 .progress-main{
   margin-bottom: 90px;
   .flag-end, .flag-start{
-    text-align: center
+    text-align: left;
+    @media (min-width: $screen-sm-min){
+      text-align: center;
+    }
   }
   .flag-start{
     .flag-icon{
@@ -49,19 +44,55 @@
 .progress-list{
   .progress-item{
     float: right;
-    width: 50%;
     vertical-align: top;
-    padding-left: 42px;
+    padding-left: 50px;
     position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-top: 0;
     &:after{
       content: '';
       position: absolute;
       right: auto;
-      left: -8px;
+      left: 30px;
       top: 0;
-      width: 17px;
+      bottom: 0;
+      width: 2px;
       height: 100%;
-      background: url('../images/icons/space-line.png') no-repeat;
+      background-color: $link-hover-color;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -8px;
+      left: 23px;
+      width: 16px;
+      height: 16px;
+      z-index: 100;
+      background: #fff url('../images/icons/circle.png') no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+    @media (min-width: $screen-sm-min){
+      width: 50%;
+      margin-bottom: 96px;
+      margin-top: 0;
+      padding-left: 42px;
+      padding-bottom: 0;
+      &:before{
+        content: none;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        right: auto;
+        left: -8px;
+        top: 0;
+        width: 17px;
+        height: 100%;
+        background: url('../images/icons/space-line.png') no-repeat;
+      }
     }
     .progress-inner{
       background-color: #f1f1f1;
@@ -70,7 +101,6 @@
       line-height: 18px;
       font-size: 14px;
       border-radius: 10px;
-      height: 105px;
       -webkit-box-orient: horizontal;
       -moz-box-orient: horizontal;
       box-orient: horizontal;
@@ -80,8 +110,14 @@
       -webkit-flex-direction: row-reverse;
       -moz-flex-direction: row-reverse;
       flex-direction: row-reverse;
+      @media (min-width: $screen-sm-min){
+        height: 105px;
+      }
       .inner-content{
-        padding: 0 18px;
+        padding: 10px;
+        @media (min-width: $screen-sm-min){
+          padding: 0 18px;
+        }
       }
       .inner-time{
         width: 90px;
@@ -91,30 +127,31 @@
         line-height: 20px;
       }
     }
-    margin-bottom: 96px;
-    margin-top: 0;
     &:nth-child(2n){
-      float: left;
-      padding-right: 42px;
-      margin-top: 96px;
-      margin-bottom: 0;
-      &:after{
-        right: -9px;
-        left: auto;
-      }
-      .progress-inner{
-        -webkit-box-orient: horizontal;
-        -moz-box-orient: horizontal;
-        box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        box-direction: normal;
-        -webkit-flex-direction: row;
-        -moz-flex-direction: row;
-        flex-direction: row;
-        .inner-time{
-          border-left: 1px solid #cccccc;
-          border-right: 0;
+      float: right;
+      @media (min-width: $screen-sm-min){
+        float: left;
+        margin-top: 96px;
+        margin-bottom: 0;
+        padding-right: 42px;
+        .progress-inner{
+          -webkit-box-orient: horizontal;
+          -moz-box-orient: horizontal;
+          box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -moz-box-direction: normal;
+          box-direction: normal;
+          -webkit-flex-direction: row;
+          -moz-flex-direction: row;
+          flex-direction: row;
+          .inner-time{
+            border-left: 1px solid #cccccc;
+            border-right: 0;
+          }
+        }
+        &:after{
+          right: -9px;
+          left: auto;
         }
       }
     }
@@ -137,8 +174,11 @@
 }
 .class-box{
   min-height: 170px;
-  margin: 0 -124px 0;
+  margin: 0;
   padding: 0;
+  @media (min-width: $screen-md-min){
+    margin: 0 -124px 0;
+  }
   .col-sm-3{
     text-align: center;
     margin-bottom: 10px;
@@ -153,6 +193,13 @@
       margin-top: -85px;
       background: url(../images/about/class_bdr.png) no-repeat;
       background-size: contain;
+    }
+    @media (max-width: $screen-sm-min){
+      &:nth-child(2n) {
+        &:after{
+          content: none;
+        }
+      }
     }
     &:last-child:after{
       content: none;

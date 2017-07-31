@@ -1,0 +1,25 @@
+@import "settings";
+
+.download-box{
+  font-size: 0;
+  margin-top: 30px;
+  .download{
+    padding: 8px 18px;
+    background-color: $link-hover-color;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    display: inline-block;
+    .download-icon{
+      background-image: url('../images/icons/icon-download.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 20px;
+    }
+  }
+  .down-info{
+    color: $link-hover-color;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+}
