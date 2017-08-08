@@ -54,29 +54,6 @@
       color: $link-hover-color;
       font-size: 16px;
     }
-    ul{
-      .icon-content{
-        background-image: url('../images/icons/icon-contnc.png');
-      }
-      .icon-telphone{
-        background-image: url('../images/icons/icon-telphone.png');
-      }
-      .icon-phone{
-        background-image: url('../images/icons/icon-phone.png');
-      }
-      .icon-qq{
-        background-image: url('../images/icons/icon-qq.png');
-      }
-    }
-    ul li{
-      color: #333333;
-      &.icon-item{
-        padding-left: 28px;
-        background-size: initial;
-        background-repeat: no-repeat;
-        background-position: left center;
-      }
-    }
   }
 }
 .detail-small-img-box{
@@ -136,9 +113,9 @@
     }
   }
   .detail-body-main{
-    margin-bottom: 35px;
+    margin-bottom: 42px;
     .detail-main-title{
-      margin-bottom: 16px;
+      margin-bottom: 20px;
       line-height: 1;
       font-size: 24px;
       color: $link-hover-color;
@@ -173,3 +150,6 @@
   }
 }
 
+.tab-content{
+  padding-top: 5px;
+}

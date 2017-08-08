@@ -1,0 +1,114 @@
+@import "settings";
+
+.map-box{
+  margin-bottom: 20px;
+  @media (min-width: $screen-md-min){
+    width: 645px;
+    margin-bottom: 0;
+    // height: 300px;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+.contec-box{
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background: url('../images/about/mifeng.png') no-repeat;
+    width: 117px;
+    height: 125px;
+  }
+  .icon-box{
+    li{
+      font-size: 14px;
+      color: #333333;
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .contec-titile{
+    font-size: 18px;
+    color: $link-hover-color;
+    margin-bottom: 18px;
+  }
+  .contec-detail{
+    margin-top: 15px;
+    ul li{
+      font-size: 14px;
+      color: #333333;
+      line-height: 24px;
+      .detail-name{
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+.content-dl{
+  max-width: 220px;
+  text-align: left;
+  @media (min-width: $screen-md-min){
+    margin: 0 auto;
+  }
+  dt{
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-weight: initial;
+  }
+  ul li{
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 12px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.row-list{
+  height: 188px;
+  margin-top: 30px;
+  @media (min-width: $screen-md-min){
+    margin-top: 56px;
+  }
+  .col-sm-3{
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    @media (min-width: $screen-md-min){
+      height: 230px;
+      margin-bottom: 0;
+      padding-top: 12px;
+      &:first-child{
+        > img{
+          position: absolute;
+          width: 322px;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+    .dbr-span{
+      position: absolute;
+      right: 0;
+      width: 1px;
+      height: 170px;
+      top: 50%;
+      margin-top: -85px;
+      background: url(../images/about/class_bdr.png) no-repeat;
+      background-size: contain;
+    }
+    &:first-child, &:last-child{
+      .dbr-span{
+        display: none;
+      }
+    }
+  }
+}

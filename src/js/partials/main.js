@@ -25,3 +25,11 @@ $.fn.gotop = function() {
 };
 $.fn.gotop();
 /* 返回顶部js end */
+
+if ($(document.body).outerHeight(true) < $(window).height()) {
+  $('.footer').css({
+    position: 'fixed',
+    width: '100%',
+    bottom: 0
+  }).before('<div style="height: '+ $('.footer').height() +'px"></div>')
+}

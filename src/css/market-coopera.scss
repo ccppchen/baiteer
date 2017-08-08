@@ -23,7 +23,16 @@
     & > .col-xs-12{
       padding: 0;
       @media (min-width: $screen-md-min){
-        height: 237px;
+        height: 280px;
+      }
+    }
+    @media (min-width: $screen-md-min){
+      .market-pic{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 448px;
+        height: 280px;
       }
     }
     .market-pic img{
@@ -40,6 +49,7 @@
       }
       @media (min-width: $screen-md-min){
         padding: 0 30px;
+        padding-left: 100px;
         .block-phone{
           display: inline;
         }

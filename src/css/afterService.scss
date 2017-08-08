@@ -2,7 +2,7 @@
 
 .download-box{
   font-size: 0;
-  margin-top: 30px;
+  margin-top: 0px;
   .download{
     padding: 8px 18px;
     background-color: $link-hover-color;
@@ -21,5 +21,39 @@
     color: $link-hover-color;
     font-size: 16px;
     padding-left: 10px;
+  }
+}
+
+.after-service-content{
+  display: table;
+  width: 100%;
+  font-size: 14px;
+  color: #333333;
+  line-height: 24px;
+  .p-space{
+    margin-bottom: 20px;
+    .p-title{
+      font-size: 16px;
+      color: $link-hover-color;
+    }
+    p{
+      margin-bottom: 0;
+    }
+    .step-item{
+      margin-bottom: 20px;
+    }
+  }
+  .content-left{
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 30px;
+  }
+  .content-right{
+    display: none;
+    @media (min-width: $screen-md-min){
+      display: table-cell;
+      vertical-align: middle;
+      width: 440px;
+    }
   }
 }

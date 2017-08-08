@@ -94,3 +94,56 @@
     margin-bottom: 80px;
   }
 }
+
+// ====
+ul.icon-box li{
+  color: #333333;
+  &.icon-item{
+    padding-left: 28px;
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+  &.icon-content{
+    background-image: url('../images/icons/icon-contnc.png');
+  }
+  &.icon-telphone{
+    background-image: url('../images/icons/icon-telphone.png');
+  }
+  &.icon-phone{
+    background-image: url('../images/icons/icon-phone.png');
+  }
+  &.icon-phone-line{
+    background-image: url('../images/icons/icon-phone-line.png');
+  }
+  &.icon-qq{
+    background-image: url('../images/icons/icon-qq.png');
+  }
+  &.icon-qq-line{
+    background-image: url('../images/icons/icon-qq-line.png');
+  }
+  &.icon-address-line{
+    background-image: url('../images/icons/icon-address.png');
+  }
+  &.icon-tel-line{
+    background-image: url('../images/icons/icon-tel-line.png');
+  }
+  &.icon-mail{
+    background-image: url('../images/icons/icon-mail.png');
+  }
+  &.icon-mail-line{
+    background-image: url('../images/icons/icon-mail.png');
+  }
+  &.icon-fax-line{
+    background-image: url('../images/icons/icon-fax.png');
+  }
+  &.icon-ucode-line{
+    background-image: url('../images/icons/icon-ucode.png');
+  }
+  &.icon-contnc{
+    background-image: url('../images/icons/icon-contnc.png');
+  }
+  &.icon-contnc-line{
+    background-image: url('../images/icons/icon-contnc-line.png');
+  }
+}

@@ -27,6 +27,7 @@
   }
   .slide-dl{
     dt{
+      font-weight: initial;
       a{
         font-size: 18px;
         color: #333333;
@@ -78,6 +79,9 @@
     }
     .content-item-title{
       padding: 30px 0;
+      @media (min-width: $screen-md-min){
+        padding: 22px 0;
+      }
       // font-size: 0;
       overflow: hidden;
       .titile-name{

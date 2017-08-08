@@ -21,7 +21,7 @@
           <div class="news-main-title">
             <div class="news-main-pic"><img src="assets/images/news/new-pic.jpg" alt=""></div>
             <div class="news-main-con">
-              <div class="news-con-title">热烈祝贺公司乔迁新址</div>
+              <a href="javascript:;" class="news-con-title">热烈祝贺公司乔迁新址</a>
               <div class="news-con-text">上海拜特尔安全设备有限公司自2005年成立以来，规模逐步扩大，公司于2017年3月25日乔迁新址：上海市松江区江田东路185号（宏亿创新科技园）9幢306室。业务电话和QQ不变。感谢新老客户对我们支持！</div>
               <div class="news-time">2016-5-27</div>
             </div>
@@ -120,5 +120,15 @@
     </div>
     <% include partials/foot %>
     <% include partials/scripts %>
+    <script type="text/javascript">
+      $(function() {
+        var newsLength = $('.news-main .news-item').length
+        if (newsLength < 6) {
+          $('.news-pages-bottom').hide()
+        } else {
+          $('.news-pages-bottom').show()
+        }
+      })
+    </script>
   </body>
 </html>
